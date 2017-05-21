@@ -4,5 +4,6 @@ require('./scss/main.scss')
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './jsx/App.jsx';
+import MapComponent from './jsx/MapComponent.jsx';
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<MapComponent />, document.getElementById('app'));

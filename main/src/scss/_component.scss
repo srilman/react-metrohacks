@@ -22,19 +22,26 @@ $font-type: 'Pacifico', cursive;
         height: 40%;
         //background-color: #e0e0eb;
         position: absolute;
-        top: 15%;
+        top: 26%;
         left: 27.5%;
 
 
         h1 {
             font-family: $font-type;
             color: white;
+            text-shadow: 2px 2px #000000;
             font-size: 100px;
         }
 
         input {
             margin-top: 50px;
             padding: 20px;
+        }
+
+        button {
+            font-size: 30px;
+            border-radius: 30px;
+            margin-top: 30px;
         }
     }
 }

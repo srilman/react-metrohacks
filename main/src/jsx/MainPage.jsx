@@ -8,8 +8,8 @@ export default class MainPage extends React.Component {
             <div className="all">
                 <div id="mainSection">
                     <h1>TripThat</h1>
-                    <input type="text" className="form-control" placeholder="Location Of Interest" aria-describedby="basic-addon1" />
-                    <button type="button" className="btn btn-success">GO</button>
+                    <input type="text" className="form-control" placeholder="E.g. Boston, MA" aria-describedby="basic-addon1" />
+                    <button type="button" className="btn btn-success">Go!</button>
                 </div>
             </div>
         );
