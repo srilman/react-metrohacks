@@ -8,9 +8,19 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: #ded5f9;
+    background-image: url("../assets/blur.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 100%;
 
     #app {
         width: 100%;
         height: 100%;
     }
+}
+
+.head{
+
+    color: white;
+
 }

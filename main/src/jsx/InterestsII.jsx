@@ -113,20 +113,22 @@ export default class InterestsII extends React.Component {
 
         console.log(s);
 
-        fetch('http://localhost:9000/attractions', {
+        fetch('http://localhost:3000/attractions', {
             method: 'POST',
+            mode: 'cors',
             headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*',
+                "X-Custom-Header": "ProcessThisImmediately",
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify({
                 types:s,
                 lat:40.712784,
                 long:-74.005941
             })
-        }).then(function(response) {
-            console.log(response);
-        })
+        }).then(function(res) {
+            console.log(res);
+        });
     }
 
     render() {
@@ -134,7 +136,7 @@ export default class InterestsII extends React.Component {
         	<div className="container">
         		<div className="row">
                     <div className="col-lg-6 tall_div">
-                        <h1>Already added</h1>
+                        <h1 className="head">Already added</h1>
                         <ul className="list-group scrollable-list">
                             {this.state.already.map(function (value, index) {
                                 return <li key={index} className="list-group-item" onClick={(e) => this.handleClickAlready(e)}>{value}</li>;
@@ -142,7 +144,7 @@ export default class InterestsII extends React.Component {
                         </ul>
                     </div>
                     <div className="col-lg-6 tall_div">
-                        <h1>Not added</h1>
+                        <h1 className="head">Not added</h1>
                         <ul className="list-group scrollable-list">
                             {this.state.not.map(function (value, index) {
                                 return <li key={index} className="list-group-item" onClick={(e) => this.handleClickNot(e)}>{value}</li>;

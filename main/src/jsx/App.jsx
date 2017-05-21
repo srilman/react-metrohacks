@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MainPage from "./MainPage.jsx"
-import MapPage from './MapPage.jsx'
+import MainPage from './MainPage.jsx'
 
 export default class App extends React.Component {
 
-    render() {
+    render () {
         return (
-            <MapPage />
+            <Route path="/main" component={MainPage} />
         );
     }
 

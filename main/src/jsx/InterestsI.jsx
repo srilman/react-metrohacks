@@ -7,7 +7,7 @@ export default class InterestsI extends React.Component {
     render() {
         return (
         	<div className="container">
-        		<h1 className="display-1 text-center"> What are you interested in?</h1>
+        		<h1 className="display-1 text-center head"> What are you interested in?</h1>
         		<br></br>
         		<div className="row">
         			<div className="col-lg-6 tall_div">
