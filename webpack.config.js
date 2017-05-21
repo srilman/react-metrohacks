@@ -26,7 +26,7 @@ module.exports = {
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
                     use: ['css-loader', 'sass-loader'],
-                    publicPath:'/dist'
+                    publicPath:'/'
                 })
             },
             {
@@ -34,12 +34,12 @@ module.exports = {
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
                     use: 'css-loader',
-                    publicPath:'/dist'
+                    publicPath:'/'
                 })
             },
             {
                 test: /\.(png|jpe?g|gif|ico)$/,
-                use: 'file-loader?name=assets/[name].[hash].[ext]'
+                loader: 'file-loader?name=[name].[hash].[ext]'
             },
             {
                 test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,

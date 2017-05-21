@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import MainPage from "./MainPage.jsx"
 
 export default class App extends React.Component {
 
     render() {
         return (
-            <div>This is some information to just test</div>
+            <MainPage />
         );
     }
 
