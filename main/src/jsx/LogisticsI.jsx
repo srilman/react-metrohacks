@@ -7,7 +7,7 @@ export default class LogisticsI extends React.Component {
         return (
         	<div>
 	        	<div className="container">
-	        		<h1 className="display-1">Enter some logistical details</h1>
+	        		<h1 className="display-1 text-center">Enter some logistical details</h1>
 	        		<br></br>
 	        		<h2 className="display-2">When are you looking to go?</h2>
 		        	<div className="row">

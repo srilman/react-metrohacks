@@ -46,4 +46,17 @@ $font-type: 'Pacifico', cursive;
 
 .tall_div {
 	height: 580px;
+    
+    li:hover{
+        background:#A5A5A5;
+    }
+}
+
+.scrollable-list {
+    overflow: scroll;
+    height: 500px;
+
+    li:hover{
+        background:#A5A5A5;
+    }
 }
