@@ -4,6 +4,7 @@ require('./scss/main.scss')
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './jsx/App.jsx';
+import MapComponent from './jsx/MapComponent.jsx';
 import LogisticsI from './jsx/LogisticsI.jsx';
 import InterestsI from './jsx/InterestsI.jsx';
 import InterestsII from './jsx/InterestsII.jsx';
