@@ -15,4 +15,4 @@ var notUse = ["Amusement Parks","Aquariums and Zoos","Art","Books","Cafes","Camp
 				"Landmarks and Monuments","Nature","Nightlife and Drink","Recreation", "Relaxation","Religion","Shopping","Technology"];
 
 //ReactDOM.render(<InterestsII initialAlready={useful} initialNot={notUse}/>, document.getElementById('app'));
-ReactDOM.render(<InterestsIII />, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('app'));

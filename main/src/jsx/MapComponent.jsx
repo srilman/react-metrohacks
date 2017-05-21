@@ -3,15 +3,26 @@ import ReactDOM from 'react-dom';
 import GoogleMapReact from 'google-map-react';
 
 export default class MapComponent extends React.Component {
+
+    constructor(props) {
+        super(props);
+        var mainLoc = this.props.mainLoc || {lat: 42.3736160, lng: -71.1097330};
+        var zoom = this.props.zoom || 10;
+        this.state = {
+            mainLoc: mainLoc,
+            zoom: zoom
+        };
+    }
+
     render() {
-        var thing = {lat: 59.95, lng: 30.33};
-        var other = 11;
+        var mainLoc = this.props.mainLoc;
+        var zoom = 10;
         return (
-            <GoogleMapReact
-                defaultCenter={thing}
-                defaultZoom={other}>
-                <div>Hello</div>
-            </GoogleMapReact>
+            <div id="finalMap">
+                <GoogleMapReact defaultCenter={this.state.mainLoc} defaultZoom={this.state.zoom}>
+                    <div>Location</div>
+                </GoogleMapReact>
+            </div>
         );
     }
 }
